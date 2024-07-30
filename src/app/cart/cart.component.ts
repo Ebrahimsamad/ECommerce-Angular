@@ -25,7 +25,7 @@ export class CartComponent {
   }
 
   updateTotalPrice() {
-    this.totalPrice = this.cartService.getTotalPrice();
+    this.totalPrice = Math.floor(this.cartService.getTotalPrice());
   }
 
   increaseQuantity(item: any) {
