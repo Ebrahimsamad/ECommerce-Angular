@@ -7,7 +7,7 @@ import { ProductDetailsComponent } from './product-details/product-details.compo
 import { CartComponent } from './cart/cart.component';
 
 export const routes: Routes = [
-  { path: '', component: ProductListComponent },
+  { path: '', component: ProductListComponent, title: 'Ebrahim App' },
   { path: 'login', component: LoginComponent, title: 'Login Page' },
   { path: 'register', component: RegisterComponent, title: 'Register Page' },
   {
@@ -15,6 +15,6 @@ export const routes: Routes = [
     component: ProductDetailsComponent,
     title: 'Product Details',
   },
-  { path: 'cart', component: CartComponent },
+  { path: 'cart', component: CartComponent, title: 'Cart Purchasing ...' },
   { path: '**', component: NotFoundComponent, title: 'Page Not Found' },
 ];
