@@ -4,7 +4,7 @@
   <a class="navbar-brand fw-bold fs-4 text-primary" [routerLink]="['']"
     >Ebrahim App</a
   >
-  <div class="links">
+  <div class="links d-flex align-items-center">
     <a
       class="link-light ms-4 btn btn-light text-bg-dark"
       [routerLink]="['/register']"
@@ -21,7 +21,7 @@
     >
     <div class="cart-icon d-inline-block">
       <i
-        class="fas fa-shopping-cart btn text-bg-dark ms-4"
+        class="fas fa-shopping-cart btn text-bg-dark ms-2"
         [routerLink]="['/cart']"
         routerLinkActive="router-link-active"
         [routerLinkActiveOptions]="{ exact: true }"
