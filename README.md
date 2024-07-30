@@ -1,6 +1,7 @@
-<<<<<<< HEAD
+
 # e-commerce-angular
 =======
-TYPESCRIPT - ANGULAR18 -BOOTSTRAP
-Ebrahim Samad 
+# typescript - angular18 - bootstrap
+========
+# Ebrahim Samad 
 
