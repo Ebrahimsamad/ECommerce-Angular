@@ -18,7 +18,7 @@
 
 .card-img-top {
   height: 200px;
-  object-fit: cover;
+  /* object-fit: cover; */
 }
 
 .card-title {
