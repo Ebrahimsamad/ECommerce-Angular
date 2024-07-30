@@ -1,0 +1,17 @@
+.remove-button {
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.remove-button:hover {
+  background-color: #ff4d4d;
+  color: white;
+}
+
+.row {
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.row.ng-leave {
+  opacity: 0;
+  transform: translateX(-100%);
+}

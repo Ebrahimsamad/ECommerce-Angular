@@ -1,0 +1,34 @@
+<div
+  class="d-flex p-3 justify-content-between align-items-center bg-dark rounded mt-2 ms-3 me-3"
+>
+  <a class="navbar-brand fw-bold fs-4 text-primary" [routerLink]="['']"
+    >Ebrahim App</a
+  >
+  <div class="links">
+    <a
+      class="link-light ms-4 btn btn-light text-bg-dark"
+      [routerLink]="['/register']"
+      routerLinkActive="router-link-active"
+      [routerLinkActiveOptions]="{ exact: true }"
+      >Register</a
+    >
+    <a
+      class="link-light ms-4 btn btn-light text-bg-dark"
+      [routerLink]="['/login']"
+      routerLinkActive="router-link-active"
+      [routerLinkActiveOptions]="{ exact: true }"
+      >Login</a
+    >
+    <div class="cart-icon d-inline-block">
+      <i
+        class="fas fa-shopping-cart btn text-bg-dark ms-4"
+        [routerLink]="['/cart']"
+        routerLinkActive="router-link-active"
+        [routerLinkActiveOptions]="{ exact: true }"
+      ></i>
+      <span class="badge bg-danger" *ngIf="cartItemCount > 0">{{
+        cartItemCount
+      }}</span>
+    </div>
+  </div>
+</div>
