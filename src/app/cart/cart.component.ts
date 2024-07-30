@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { CartService } from '../services/cart.service';
 import { CommonModule } from '@angular/common';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-cart',
@@ -13,7 +14,7 @@ export class CartComponent {
   cartItems: any[] = [];
   totalPrice: number = 0;
 
-  constructor(private cartService: CartService) {}
+  constructor(private cartService: CartService, private router: Router) {}
 
   ngOnInit() {
     this.loadCart();
@@ -54,5 +55,6 @@ export class CartComponent {
     this.cartService.clearCart();
     this.loadCart();
     this.cartService.updateCartCount();
+    this.router.navigate(['']);
   }
 }
